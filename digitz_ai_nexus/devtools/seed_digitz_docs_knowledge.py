@@ -7,7 +7,10 @@ Nexus Knowledge Sources, so the docs "Ask Nexus AI" box can answer from them.
 Content origin: `App Documentation` on digitz_prime.site is flattened (one entry per
 doc section) by `digitz_prime.devtools.export_docs_knowledge.run` into
 `digitz_ai_nexus/data/digitz_docs_knowledge.json`, which is committed to this app.
-This seed reads that file — it does NOT need the digitz_prime site.
+Tracker Classic entries are refreshed from its versioned Markdown using
+`devtools.build_tracker_docs_knowledge` after a full Prime export (see
+`docs/tracker-knowledge-seed.md`). This seed reads the resulting file — it does
+NOT need the digitz_prime site or digitz_tracker installed.
 
 Taxonomy created (all under the DIGITZ-PRIME tenant):
     Nexus Tenant        DIGITZ-PRIME
